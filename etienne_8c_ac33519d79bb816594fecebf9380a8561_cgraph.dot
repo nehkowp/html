@@ -1,0 +1,20 @@
+digraph "distributionPiocheDraft"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="distributionPiocheDraft",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=": Constitue les mains de tous les joueurs et les séries"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="afficherDraft",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$etienne_8c.html#ae406a3469404af38045b1492d229c1fc",tooltip=": Affiche la totalité des cartes de la pioche"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="afficherCarte",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$etienne_8c.html#a92b44526d732355ff02b218dce60e426",tooltip=": Affiche une carte de manière différente en fonction de son état"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="intCarteToCharCarte",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$paul_8c.html#aaafffa208510d93f7593d9420bad974e",tooltip=": Permet de renvoyer un char \"  1 \" ou \" 10\" selon le int envoyé"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="choixCartesDraft",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$etienne_8c.html#a944e57752a277e9af8db3ef4b87b9cf9",tooltip=": Fait choisir aux joueurs leurs 10 cartes, une par une, parmi la pioche"];
+  Node5 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="emptyBuffer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$etienne_8c.html#a8bd9c796dfaae356a03d29dfc65aef69",tooltip=": Vide le buffer après une saisie"];
+}

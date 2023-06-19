@@ -5,7 +5,7 @@ digraph "choixColonneJoueeBotHard"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="RL";
-  Node1 [label="choixColonneJoueeBotHard",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=": Permet de choisir la colonne pour le Bot de difficulté hard"];
+  Node1 [label="choixColonneJoueeBotHard",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=": Permet de choisir la colonne pour le Bot de difficulté Hard"];
   Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node2 [label="choixColonneJouee",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$paul_8c.html#a0399f7d61a0eb8a0375456b9e0c84e08",tooltip=": Permet de choisir la colonne selon le type du joueur (humain/bot)"];
   Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];

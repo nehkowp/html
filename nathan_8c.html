@@ -69,6 +69,11 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="nathan_8h_source.html">nathan.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="adrien_8h_source.html">adrien.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="etienne_8h_source.html">etienne.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="structure_8h_source.html">structure.h</a>&quot;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for nathan.c:</div>
 <div class="dyncontent">
@@ -85,8 +90,56 @@ Functions</h2></td></tr>
 <tr class="separator:ac353b46dd7a9b7306a9fa97aa4f5e809"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa664cede938545e897f49e9b1a9f06e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nathan_8c.html#aa664cede938545e897f49e9b1a9f06e3">afficherSeries</a> (<a class="el" href="struct_jeux.html">Jeux</a> Jeu)</td></tr>
 <tr class="separator:aa664cede938545e897f49e9b1a9f06e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a042f8ecdb69a538add66b239668e4272"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nathan_8c.html#a042f8ecdb69a538add66b239668e4272">afficherAbattoir</a> (<a class="el" href="struct_jeux.html">Jeux</a> Jeu)</td></tr>
+<tr class="separator:a042f8ecdb69a538add66b239668e4272"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a042f8ecdb69a538add66b239668e4272"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a042f8ecdb69a538add66b239668e4272">&#9670;&nbsp;</a></span>afficherAbattoir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void afficherAbattoir </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_jeux.html">Jeux</a>&#160;</td>
+          <td class="paramname"><em>Jeu</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="nathan_8c_source.html#l00074">74</a> of file <a class="el" href="nathan_8c_source.html">nathan.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                               {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;   printf(<a class="code" href="structure_8h.html#a2adb4c9e293ac446897ccfac5a52d6c2">BRED</a>);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    printf(<span class="stringliteral">&quot;━━━━━━━━━━━━━━━CLASSEMENT PROVISOIRE━━━━━━━━━━━━━━━ \n&quot;</span>);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; Jeu.<a class="code" href="struct_jeux.html#a30d0ada3a9657626428ce7e1e8bf83dd">nbJoueurs</a>; i++){</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        printf(<span class="stringliteral">&quot;-------------------JOUEUR %d------------------- \n&quot;</span>, i+1);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        printf(<span class="stringliteral">&quot;NOM: %s  &quot;</span>, Jeu.<a class="code" href="struct_jeux.html#ac6ffbd35ce8980b2c776389ea7cb8eab">tabJoueurs</a>[i].<a class="code" href="struct_joueur.html#a23faf923fdfddd0ed37669438862ea33">nomJoueur</a>);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        printf(<span class="stringliteral">&quot;\nNOMBRE TDB: %d \n&quot;</span>, Jeu.<a class="code" href="struct_jeux.html#ac6ffbd35ce8980b2c776389ea7cb8eab">tabJoueurs</a>[i].<a class="code" href="struct_joueur.html#a0186564ff0e9f082fecfd7a3b135b07b">abattoirJoueur</a>);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    } </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    printf(<span class="stringliteral">&quot;━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ \n&quot;</span>);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    printf(<a class="code" href="structure_8h.html#a01de9e6a115c86e1c2b8747df2b28925">reset</a>);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
+<div class="ttc" id="astruct_jeux_html_a30d0ada3a9657626428ce7e1e8bf83dd"><div class="ttname"><a href="struct_jeux.html#a30d0ada3a9657626428ce7e1e8bf83dd">Jeux::nbJoueurs</a></div><div class="ttdeci">int nbJoueurs</div><div class="ttdef"><b>Definition:</b> <a href="structure_8h_source.html#l00070">structure.h:70</a></div></div>
+<div class="ttc" id="astruct_jeux_html_ac6ffbd35ce8980b2c776389ea7cb8eab"><div class="ttname"><a href="struct_jeux.html#ac6ffbd35ce8980b2c776389ea7cb8eab">Jeux::tabJoueurs</a></div><div class="ttdeci">Joueur * tabJoueurs</div><div class="ttdef"><b>Definition:</b> <a href="structure_8h_source.html#l00068">structure.h:68</a></div></div>
+<div class="ttc" id="astruct_joueur_html_a0186564ff0e9f082fecfd7a3b135b07b"><div class="ttname"><a href="struct_joueur.html#a0186564ff0e9f082fecfd7a3b135b07b">Joueur::abattoirJoueur</a></div><div class="ttdeci">int abattoirJoueur</div><div class="ttdef"><b>Definition:</b> <a href="structure_8h_source.html#l00054">structure.h:54</a></div></div>
+<div class="ttc" id="astruct_joueur_html_a23faf923fdfddd0ed37669438862ea33"><div class="ttname"><a href="struct_joueur.html#a23faf923fdfddd0ed37669438862ea33">Joueur::nomJoueur</a></div><div class="ttdeci">char * nomJoueur</div><div class="ttdef"><b>Definition:</b> <a href="structure_8h_source.html#l00056">structure.h:56</a></div></div>
+<div class="ttc" id="astructure_8h_html_a01de9e6a115c86e1c2b8747df2b28925"><div class="ttname"><a href="structure_8h.html#a01de9e6a115c86e1c2b8747df2b28925">reset</a></div><div class="ttdeci">#define reset</div><div class="ttdef"><b>Definition:</b> <a href="structure_8h_source.html#l00016">structure.h:16</a></div></div>
+<div class="ttc" id="astructure_8h_html_a2adb4c9e293ac446897ccfac5a52d6c2"><div class="ttname"><a href="structure_8h.html#a2adb4c9e293ac446897ccfac5a52d6c2">BRED</a></div><div class="ttdeci">#define BRED</div><div class="ttdef"><b>Definition:</b> <a href="structure_8h_source.html#l00020">structure.h:20</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="structure_8h_source.html#l00054">Joueur::abattoirJoueur</a>, <a class="el" href="structure_8h_source.html#l00020">BRED</a>, <a class="el" href="structure_8h_source.html#l00070">Jeux::nbJoueurs</a>, <a class="el" href="structure_8h_source.html#l00056">Joueur::nomJoueur</a>, <a class="el" href="structure_8h_source.html#l00016">reset</a>, and <a class="el" href="structure_8h_source.html#l00068">Jeux::tabJoueurs</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="paul_8c_source.html#l00338">mancheJoueurs()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="nathan_8c_a042f8ecdb69a538add66b239668e4272_icgraph.png" border="0" usemap="#anathan_8c_a042f8ecdb69a538add66b239668e4272_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
 <a id="aa664cede938545e897f49e9b1a9f06e3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa664cede938545e897f49e9b1a9f06e3">&#9670;&nbsp;</a></span>afficherSeries()</h2>
 
@@ -103,32 +156,32 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nathan_8c_source.html#l00053">53</a> of file <a class="el" href="nathan_8c_source.html">nathan.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                             {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="struct_carte.html">Carte</a> NeutreCarte;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    NeutreCarte.<a class="code" href="struct_carte.html#ab4f9dbb26c39b5e751daf1f9d9059391">teteDeboeuf</a> = 0;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    NeutreCarte.<a class="code" href="struct_carte.html#a0ff8146e2b332a5ff429566baf66e28b">valeur</a> = 0;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> l = 0; l &lt; 5 ; l++){</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> c =0; c &lt; 4; c++){</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="keywordflow">if</span> (Jeu.<a class="code" href="struct_jeux.html#a6e99652e5adfd9132af1c48a0e71a0b0">series</a>[l][c].<a class="code" href="struct_carte.html#a0ff8146e2b332a5ff429566baf66e28b">valeur</a> != NeutreCarte.<a class="code" href="struct_carte.html#a0ff8146e2b332a5ff429566baf66e28b">valeur</a> &amp;&amp; Jeu.<a class="code" href="struct_jeux.html#a6e99652e5adfd9132af1c48a0e71a0b0">series</a>[l][c].<a class="code" href="struct_carte.html#ab4f9dbb26c39b5e751daf1f9d9059391">teteDeboeuf</a> != NeutreCarte.<a class="code" href="struct_carte.html#ab4f9dbb26c39b5e751daf1f9d9059391">teteDeboeuf</a>){</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                <a class="code" href="adrien_8h.html#a8e1b9e2fe2861f615655db0297bae676">afficherCarte</a>(Jeu.<a class="code" href="struct_jeux.html#a6e99652e5adfd9132af1c48a0e71a0b0">series</a>[l][c],<a class="code" href="structure_8h.html#ae60adcb558b7f2142c3aa2dd94aaa535a04e8641a8bfe5fa8295dacda0119d453">CARTE_SERIES</a>);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            }<span class="keywordflow">else</span>{</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                printf(<span class="stringliteral">&quot;            &quot;</span>);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            }</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        }</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        printf(<span class="stringliteral">&quot;\n&quot;</span>);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
-<div class="ttc" id="aadrien_8h_html_a8e1b9e2fe2861f615655db0297bae676"><div class="ttname"><a href="adrien_8h.html#a8e1b9e2fe2861f615655db0297bae676">afficherCarte</a></div><div class="ttdeci">void afficherCarte(Carte carte, int etat)</div><div class="ttdoc">: demande à l'utilisateur le niveau des bots</div><div class="ttdef"><b>Definition:</b> <a href="etienne_8c_source.html#l00218">etienne.c:218</a></div></div>
-<div class="ttc" id="astruct_carte_html"><div class="ttname"><a href="struct_carte.html">Carte</a></div><div class="ttdef"><b>Definition:</b> <a href="structure_8h_source.html#l00035">structure.h:35</a></div></div>
-<div class="ttc" id="astruct_carte_html_a0ff8146e2b332a5ff429566baf66e28b"><div class="ttname"><a href="struct_carte.html#a0ff8146e2b332a5ff429566baf66e28b">Carte::valeur</a></div><div class="ttdeci">int valeur</div><div class="ttdef"><b>Definition:</b> <a href="structure_8h_source.html#l00037">structure.h:37</a></div></div>
-<div class="ttc" id="astruct_carte_html_ab4f9dbb26c39b5e751daf1f9d9059391"><div class="ttname"><a href="struct_carte.html#ab4f9dbb26c39b5e751daf1f9d9059391">Carte::teteDeboeuf</a></div><div class="ttdeci">int teteDeboeuf</div><div class="ttdef"><b>Definition:</b> <a href="structure_8h_source.html#l00036">structure.h:36</a></div></div>
-<div class="ttc" id="astruct_jeux_html_a6e99652e5adfd9132af1c48a0e71a0b0"><div class="ttname"><a href="struct_jeux.html#a6e99652e5adfd9132af1c48a0e71a0b0">Jeux::series</a></div><div class="ttdeci">Carte series[5][4]</div><div class="ttdef"><b>Definition:</b> <a href="structure_8h_source.html#l00057">structure.h:57</a></div></div>
-<div class="ttc" id="astructure_8h_html_ae60adcb558b7f2142c3aa2dd94aaa535a04e8641a8bfe5fa8295dacda0119d453"><div class="ttname"><a href="structure_8h.html#ae60adcb558b7f2142c3aa2dd94aaa535a04e8641a8bfe5fa8295dacda0119d453">CARTE_SERIES</a></div><div class="ttdeci">@ CARTE_SERIES</div><div class="ttdef"><b>Definition:</b> <a href="structure_8h_source.html#l00032">structure.h:32</a></div></div>
+<p class="definition">Definition at line <a class="el" href="nathan_8c_source.html#l00058">58</a> of file <a class="el" href="nathan_8c_source.html">nathan.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                             {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="struct_carte.html">Carte</a> NeutreCarte;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    NeutreCarte.<a class="code" href="struct_carte.html#ab4f9dbb26c39b5e751daf1f9d9059391">teteDeboeuf</a> = 0;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    NeutreCarte.<a class="code" href="struct_carte.html#a0ff8146e2b332a5ff429566baf66e28b">valeur</a> = 0;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> l = 0; l &lt; 5 ; l++){</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> c =0; c &lt; 4; c++){</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordflow">if</span> (Jeu.<a class="code" href="struct_jeux.html#a6e99652e5adfd9132af1c48a0e71a0b0">series</a>[l][c].<a class="code" href="struct_carte.html#a0ff8146e2b332a5ff429566baf66e28b">valeur</a> != NeutreCarte.<a class="code" href="struct_carte.html#a0ff8146e2b332a5ff429566baf66e28b">valeur</a> &amp;&amp; Jeu.<a class="code" href="struct_jeux.html#a6e99652e5adfd9132af1c48a0e71a0b0">series</a>[l][c].<a class="code" href="struct_carte.html#ab4f9dbb26c39b5e751daf1f9d9059391">teteDeboeuf</a> != NeutreCarte.<a class="code" href="struct_carte.html#ab4f9dbb26c39b5e751daf1f9d9059391">teteDeboeuf</a>){</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                <a class="code" href="etienne_8c.html#a92b44526d732355ff02b218dce60e426">afficherCarte</a>(Jeu.<a class="code" href="struct_jeux.html#a6e99652e5adfd9132af1c48a0e71a0b0">series</a>[l][c],<a class="code" href="structure_8h.html#ae60adcb558b7f2142c3aa2dd94aaa535a04e8641a8bfe5fa8295dacda0119d453">CARTE_SERIES</a>);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            }<span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                printf(<span class="stringliteral">&quot;            &quot;</span>);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        printf(<span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
+<div class="ttc" id="aetienne_8c_html_a92b44526d732355ff02b218dce60e426"><div class="ttname"><a href="etienne_8c.html#a92b44526d732355ff02b218dce60e426">afficherCarte</a></div><div class="ttdeci">void afficherCarte(Carte carte, int etat)</div><div class="ttdoc">: Affiche une carte de manière différente en fonction de son état</div><div class="ttdef"><b>Definition:</b> <a href="etienne_8c_source.html#l00154">etienne.c:154</a></div></div>
+<div class="ttc" id="astruct_carte_html"><div class="ttname"><a href="struct_carte.html">Carte</a></div><div class="ttdoc">Cette structure contient toutes les données d'une carte.</div><div class="ttdef"><b>Definition:</b> <a href="structure_8h_source.html#l00039">structure.h:39</a></div></div>
+<div class="ttc" id="astruct_carte_html_a0ff8146e2b332a5ff429566baf66e28b"><div class="ttname"><a href="struct_carte.html#a0ff8146e2b332a5ff429566baf66e28b">Carte::valeur</a></div><div class="ttdeci">int valeur</div><div class="ttdef"><b>Definition:</b> <a href="structure_8h_source.html#l00041">structure.h:41</a></div></div>
+<div class="ttc" id="astruct_carte_html_ab4f9dbb26c39b5e751daf1f9d9059391"><div class="ttname"><a href="struct_carte.html#ab4f9dbb26c39b5e751daf1f9d9059391">Carte::teteDeboeuf</a></div><div class="ttdeci">int teteDeboeuf</div><div class="ttdef"><b>Definition:</b> <a href="structure_8h_source.html#l00040">structure.h:40</a></div></div>
+<div class="ttc" id="astruct_jeux_html_a6e99652e5adfd9132af1c48a0e71a0b0"><div class="ttname"><a href="struct_jeux.html#a6e99652e5adfd9132af1c48a0e71a0b0">Jeux::series</a></div><div class="ttdeci">Carte series[5][4]</div><div class="ttdef"><b>Definition:</b> <a href="structure_8h_source.html#l00069">structure.h:69</a></div></div>
+<div class="ttc" id="astructure_8h_html_ae60adcb558b7f2142c3aa2dd94aaa535a04e8641a8bfe5fa8295dacda0119d453"><div class="ttname"><a href="structure_8h.html#ae60adcb558b7f2142c3aa2dd94aaa535a04e8641a8bfe5fa8295dacda0119d453">CARTE_SERIES</a></div><div class="ttdeci">@ CARTE_SERIES</div><div class="ttdef"><b>Definition:</b> <a href="structure_8h_source.html#l00033">structure.h:33</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="etienne_8c_source.html#l00218">afficherCarte()</a>, <a class="el" href="structure_8h_source.html#l00032">CARTE_SERIES</a>, <a class="el" href="structure_8h_source.html#l00057">Jeux::series</a>, <a class="el" href="structure_8h_source.html#l00036">Carte::teteDeboeuf</a>, and <a class="el" href="structure_8h_source.html#l00037">Carte::valeur</a>.</p>
+<p class="reference">References <a class="el" href="etienne_8c_source.html#l00154">afficherCarte()</a>, <a class="el" href="structure_8h_source.html#l00033">CARTE_SERIES</a>, <a class="el" href="structure_8h_source.html#l00069">Jeux::series</a>, <a class="el" href="structure_8h_source.html#l00040">Carte::teteDeboeuf</a>, and <a class="el" href="structure_8h_source.html#l00041">Carte::valeur</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="paul_8c_source.html#l00329">afficherJeu()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="paul_8c_source.html#l00374">afficherJeu()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -180,27 +233,25 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nathan_8c_source.html#l00010">10</a> of file <a class="el" href="nathan_8c_source.html">nathan.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;                                                                 {</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    Jeu-&gt;<a class="code" href="struct_jeux.html#ac6ffbd35ce8980b2c776389ea7cb8eab">tabJoueurs</a>[id].<a class="code" href="struct_joueur.html#a23faf923fdfddd0ed37669438862ea33">nomJoueur</a> = malloc(<a class="code" href="structure_8h.html#af83984133e582f79f962e7375122cf02">TAILLEMAX</a>*<span class="keyword">sizeof</span>(<span class="keywordtype">char</span>));</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    Jeu-&gt;<a class="code" href="struct_jeux.html#ac6ffbd35ce8980b2c776389ea7cb8eab">tabJoueurs</a>[id].<a class="code" href="struct_joueur.html#aabb3c7c31015e9d83653835c767e8745">mainJoueur</a> = malloc(10*<span class="keyword">sizeof</span>(<a class="code" href="struct_carte.html">Carte</a>));</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    Jeu-&gt;<a class="code" href="struct_jeux.html#ac6ffbd35ce8980b2c776389ea7cb8eab">tabJoueurs</a>[id].<a class="code" href="struct_joueur.html#a3c83c4ba0e9b07c444b5d65fb627e1e4">id</a> = id;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    Jeu-&gt;<a class="code" href="struct_jeux.html#ac6ffbd35ce8980b2c776389ea7cb8eab">tabJoueurs</a>[id].<a class="code" href="struct_joueur.html#a42b76d5589210d5a894b08cb6e7e1174">type</a> = <a class="code" href="structure_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    Jeu-&gt;<a class="code" href="struct_jeux.html#ac6ffbd35ce8980b2c776389ea7cb8eab">tabJoueurs</a>[id].<a class="code" href="struct_joueur.html#a23faf923fdfddd0ed37669438862ea33">nomJoueur</a> = nomJoueur;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
-<div class="ttc" id="astruct_jeux_html_ac6ffbd35ce8980b2c776389ea7cb8eab"><div class="ttname"><a href="struct_jeux.html#ac6ffbd35ce8980b2c776389ea7cb8eab">Jeux::tabJoueurs</a></div><div class="ttdeci">Joueur * tabJoueurs</div><div class="ttdef"><b>Definition:</b> <a href="structure_8h_source.html#l00056">structure.h:56</a></div></div>
-<div class="ttc" id="astruct_joueur_html_a23faf923fdfddd0ed37669438862ea33"><div class="ttname"><a href="struct_joueur.html#a23faf923fdfddd0ed37669438862ea33">Joueur::nomJoueur</a></div><div class="ttdeci">char * nomJoueur</div><div class="ttdef"><b>Definition:</b> <a href="structure_8h_source.html#l00047">structure.h:47</a></div></div>
-<div class="ttc" id="astruct_joueur_html_a3c83c4ba0e9b07c444b5d65fb627e1e4"><div class="ttname"><a href="struct_joueur.html#a3c83c4ba0e9b07c444b5d65fb627e1e4">Joueur::id</a></div><div class="ttdeci">int id</div><div class="ttdef"><b>Definition:</b> <a href="structure_8h_source.html#l00046">structure.h:46</a></div></div>
-<div class="ttc" id="astruct_joueur_html_a42b76d5589210d5a894b08cb6e7e1174"><div class="ttname"><a href="struct_joueur.html#a42b76d5589210d5a894b08cb6e7e1174">Joueur::type</a></div><div class="ttdeci">int type</div><div class="ttdef"><b>Definition:</b> <a href="structure_8h_source.html#l00049">structure.h:49</a></div></div>
-<div class="ttc" id="astruct_joueur_html_aabb3c7c31015e9d83653835c767e8745"><div class="ttname"><a href="struct_joueur.html#aabb3c7c31015e9d83653835c767e8745">Joueur::mainJoueur</a></div><div class="ttdeci">Carte * mainJoueur</div><div class="ttdef"><b>Definition:</b> <a href="structure_8h_source.html#l00044">structure.h:44</a></div></div>
+<p class="definition">Definition at line <a class="el" href="nathan_8c_source.html#l00015">15</a> of file <a class="el" href="nathan_8c_source.html">nathan.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;                                                                 {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    Jeu-&gt;<a class="code" href="struct_jeux.html#ac6ffbd35ce8980b2c776389ea7cb8eab">tabJoueurs</a>[id].<a class="code" href="struct_joueur.html#a23faf923fdfddd0ed37669438862ea33">nomJoueur</a> = malloc(<a class="code" href="structure_8h.html#af83984133e582f79f962e7375122cf02">TAILLEMAX</a>*<span class="keyword">sizeof</span>(<span class="keywordtype">char</span>));</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    Jeu-&gt;<a class="code" href="struct_jeux.html#ac6ffbd35ce8980b2c776389ea7cb8eab">tabJoueurs</a>[id].<a class="code" href="struct_joueur.html#aabb3c7c31015e9d83653835c767e8745">mainJoueur</a> = malloc(10*<span class="keyword">sizeof</span>(<a class="code" href="struct_carte.html">Carte</a>));</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    Jeu-&gt;<a class="code" href="struct_jeux.html#ac6ffbd35ce8980b2c776389ea7cb8eab">tabJoueurs</a>[id].<a class="code" href="struct_joueur.html#a3c83c4ba0e9b07c444b5d65fb627e1e4">id</a> = id;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    Jeu-&gt;<a class="code" href="struct_jeux.html#ac6ffbd35ce8980b2c776389ea7cb8eab">tabJoueurs</a>[id].<a class="code" href="struct_joueur.html#a42b76d5589210d5a894b08cb6e7e1174">type</a> = <a class="code" href="structure_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    Jeu-&gt;<a class="code" href="struct_jeux.html#ac6ffbd35ce8980b2c776389ea7cb8eab">tabJoueurs</a>[id].<a class="code" href="struct_joueur.html#a23faf923fdfddd0ed37669438862ea33">nomJoueur</a> = nomJoueur;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
+<div class="ttc" id="astruct_joueur_html_a3c83c4ba0e9b07c444b5d65fb627e1e4"><div class="ttname"><a href="struct_joueur.html#a3c83c4ba0e9b07c444b5d65fb627e1e4">Joueur::id</a></div><div class="ttdeci">int id</div><div class="ttdef"><b>Definition:</b> <a href="structure_8h_source.html#l00055">structure.h:55</a></div></div>
+<div class="ttc" id="astruct_joueur_html_a42b76d5589210d5a894b08cb6e7e1174"><div class="ttname"><a href="struct_joueur.html#a42b76d5589210d5a894b08cb6e7e1174">Joueur::type</a></div><div class="ttdeci">int type</div><div class="ttdef"><b>Definition:</b> <a href="structure_8h_source.html#l00058">structure.h:58</a></div></div>
+<div class="ttc" id="astruct_joueur_html_aabb3c7c31015e9d83653835c767e8745"><div class="ttname"><a href="struct_joueur.html#aabb3c7c31015e9d83653835c767e8745">Joueur::mainJoueur</a></div><div class="ttdeci">Carte * mainJoueur</div><div class="ttdef"><b>Definition:</b> <a href="structure_8h_source.html#l00053">structure.h:53</a></div></div>
 <div class="ttc" id="astructure_8h_html_a7aead736a07eaf25623ad7bfa1f0ee2d"><div class="ttname"><a href="structure_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a></div><div class="ttdeci">type</div><div class="ttdef"><b>Definition:</b> <a href="structure_8h_source.html#l00031">structure.h:31</a></div></div>
 <div class="ttc" id="astructure_8h_html_af83984133e582f79f962e7375122cf02"><div class="ttname"><a href="structure_8h.html#af83984133e582f79f962e7375122cf02">TAILLEMAX</a></div><div class="ttdeci">#define TAILLEMAX</div><div class="ttdef"><b>Definition:</b> <a href="structure_8h_source.html#l00028">structure.h:28</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="structure_8h_source.html#l00046">Joueur::id</a>, <a class="el" href="structure_8h_source.html#l00044">Joueur::mainJoueur</a>, <a class="el" href="structure_8h_source.html#l00047">Joueur::nomJoueur</a>, <a class="el" href="structure_8h_source.html#l00056">Jeux::tabJoueurs</a>, <a class="el" href="structure_8h_source.html#l00028">TAILLEMAX</a>, and <a class="el" href="structure_8h_source.html#l00049">Joueur::type</a>.</p>
+<p class="reference">References <a class="el" href="structure_8h_source.html#l00055">Joueur::id</a>, <a class="el" href="structure_8h_source.html#l00053">Joueur::mainJoueur</a>, <a class="el" href="structure_8h_source.html#l00056">Joueur::nomJoueur</a>, <a class="el" href="structure_8h_source.html#l00068">Jeux::tabJoueurs</a>, <a class="el" href="structure_8h_source.html#l00028">TAILLEMAX</a>, and <a class="el" href="structure_8h_source.html#l00058">Joueur::type</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="etienne_8c_source.html#l00189">creationTabJoueur()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="etienne_8c_source.html#l00133">creationTabJoueur()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -225,33 +276,32 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nathan_8c_source.html#l00026">26</a> of file <a class="el" href="nathan_8c_source.html">nathan.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                              {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">int</span> carteUsed;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="struct_carte.html">Carte</a> NeutreCarte;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    NeutreCarte.<a class="code" href="struct_carte.html#ab4f9dbb26c39b5e751daf1f9d9059391">teteDeboeuf</a> = 0;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    NeutreCarte.<a class="code" href="struct_carte.html#a0ff8146e2b332a5ff429566baf66e28b">valeur</a> = 0;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment">// Initialisation //</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> l = 0; l &lt; 5 ; l++){</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> c =0; c &lt; 4; c++){</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            Jeu-&gt;<a class="code" href="struct_jeux.html#a6e99652e5adfd9132af1c48a0e71a0b0">series</a>[l][c] = NeutreCarte;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        }</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">//Création premières cartes des séries//</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    carteUsed = (Jeu-&gt;<a class="code" href="struct_jeux.html#a30d0ada3a9657626428ce7e1e8bf83dd">nbJoueurs</a>) * 10;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">int</span> idCarte = 0;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> idCarteUsed = carteUsed; idCarteUsed &lt; carteUsed + 4;idCarteUsed++){</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        Jeu-&gt;<a class="code" href="struct_jeux.html#a6e99652e5adfd9132af1c48a0e71a0b0">series</a>[0][idCarte] = Jeu-&gt;<a class="code" href="struct_jeux.html#a7d74b4e686f34c8dd572ed10d7186075">pioche</a>[idCarteUsed];</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        idCarte++;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
-<div class="ttc" id="astruct_jeux_html_a30d0ada3a9657626428ce7e1e8bf83dd"><div class="ttname"><a href="struct_jeux.html#a30d0ada3a9657626428ce7e1e8bf83dd">Jeux::nbJoueurs</a></div><div class="ttdeci">int nbJoueurs</div><div class="ttdef"><b>Definition:</b> <a href="structure_8h_source.html#l00058">structure.h:58</a></div></div>
-<div class="ttc" id="astruct_jeux_html_a7d74b4e686f34c8dd572ed10d7186075"><div class="ttname"><a href="struct_jeux.html#a7d74b4e686f34c8dd572ed10d7186075">Jeux::pioche</a></div><div class="ttdeci">Carte pioche[104]</div><div class="ttdef"><b>Definition:</b> <a href="structure_8h_source.html#l00060">structure.h:60</a></div></div>
+<p class="definition">Definition at line <a class="el" href="nathan_8c_source.html#l00031">31</a> of file <a class="el" href="nathan_8c_source.html">nathan.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                              {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">int</span> carteUsed;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="struct_carte.html">Carte</a> NeutreCarte;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    NeutreCarte.<a class="code" href="struct_carte.html#ab4f9dbb26c39b5e751daf1f9d9059391">teteDeboeuf</a> = 0;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    NeutreCarte.<a class="code" href="struct_carte.html#a0ff8146e2b332a5ff429566baf66e28b">valeur</a> = 0;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="comment">// Initialisation //</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> l = 0; l &lt; 5 ; l++){</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> c =0; c &lt; 4; c++){</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            Jeu-&gt;<a class="code" href="struct_jeux.html#a6e99652e5adfd9132af1c48a0e71a0b0">series</a>[l][c] = NeutreCarte;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">//Création premières cartes des séries//</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    carteUsed = (Jeu-&gt;<a class="code" href="struct_jeux.html#a30d0ada3a9657626428ce7e1e8bf83dd">nbJoueurs</a>) * 10;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">int</span> idCarte = 0;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> idCarteUsed = carteUsed; idCarteUsed &lt; carteUsed + 4;idCarteUsed++){</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        Jeu-&gt;<a class="code" href="struct_jeux.html#a6e99652e5adfd9132af1c48a0e71a0b0">series</a>[0][idCarte] = Jeu-&gt;<a class="code" href="struct_jeux.html#a7d74b4e686f34c8dd572ed10d7186075">pioche</a>[idCarteUsed];</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        idCarte++;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
+<div class="ttc" id="astruct_jeux_html_a7d74b4e686f34c8dd572ed10d7186075"><div class="ttname"><a href="struct_jeux.html#a7d74b4e686f34c8dd572ed10d7186075">Jeux::pioche</a></div><div class="ttdeci">Carte pioche[104]</div><div class="ttdef"><b>Definition:</b> <a href="structure_8h_source.html#l00072">structure.h:72</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="structure_8h_source.html#l00058">Jeux::nbJoueurs</a>, <a class="el" href="structure_8h_source.html#l00060">Jeux::pioche</a>, <a class="el" href="structure_8h_source.html#l00057">Jeux::series</a>, <a class="el" href="structure_8h_source.html#l00036">Carte::teteDeboeuf</a>, and <a class="el" href="structure_8h_source.html#l00037">Carte::valeur</a>.</p>
+<p class="reference">References <a class="el" href="structure_8h_source.html#l00070">Jeux::nbJoueurs</a>, <a class="el" href="structure_8h_source.html#l00072">Jeux::pioche</a>, <a class="el" href="structure_8h_source.html#l00069">Jeux::series</a>, <a class="el" href="structure_8h_source.html#l00040">Carte::teteDeboeuf</a>, and <a class="el" href="structure_8h_source.html#l00041">Carte::valeur</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="paul_8c_source.html#l00017">tour2Jeu()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="paul_8c_source.html#l00019">tour2Jeu()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -263,7 +313,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 16 2023 15:53:30 for ProjetP1 by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Mon Jun 19 2023 02:37:24 for ProjetP1 by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

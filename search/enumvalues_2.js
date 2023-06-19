@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['easy_213',['EASY',['../structure_8h.html#a35aa2d55b501700469097f04b7962297a26d394b5caf2853dbcef5884f0f068dd',1,'structure.h']]]
+  ['draft_231',['DRAFT',['../structure_8h.html#a1a6b6fb557d8d37d59700faf4e4c9167a0b18dcbaa244a964cf244b6e3e894a28',1,'structure.h']]]
 ];
