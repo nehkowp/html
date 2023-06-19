@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['lancementarg_207',['lancementArg',['../affichage_8c.html#a5ad82e198d4668b31a5aee88468edda4',1,'lancementArg(Jeux *Jeu, int argc, char *argv[]):&#160;affichage.c'],['../affichage_8h.html#a317970f049c6f2e6b462f99649c76b60',1,'lancementArg(Jeux *Jeu, int argc, char *argv[]):&#160;affichage.c']]],
-  ['long_5ffunction_5fwith_5fmany_5fparameters_208',['long_function_with_many_parameters',['../class_my_library_1_1_subclass_example.html#aa76c75a24c1652733cdfe2a972db96c6',1,'MyLibrary::SubclassExample']]]
+  ['main_175',['main',['../main_8c.html#ac4c0f8a8146b128f1b8f920e3a9c3b1e',1,'main.c']]],
+  ['manchejoueurs_176',['mancheJoueurs',['../jeu_8c.html#a2c2c07fe98287fa7b6928d701aaa2046',1,'mancheJoueurs(Jeux *Jeu):&#160;jeu.c'],['../jeu_8h.html#a353b54b6a67ccd9a7c5876276ecb3eb7',1,'mancheJoueurs(Jeux *Jeu):&#160;jeu.c']]],
+  ['melangepioche_177',['melangePioche',['../jeu_8c.html#aa33b0cf44b73eea6c3152021d6ccbf4b',1,'melangePioche(Jeux *Jeu, int NbrCarteVariante):&#160;jeu.c'],['../jeu_8h.html#aa33b0cf44b73eea6c3152021d6ccbf4b',1,'melangePioche(Jeux *Jeu, int NbrCarteVariante):&#160;jeu.c']]]
 ];

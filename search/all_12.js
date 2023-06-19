@@ -1,12 +1,9 @@
 var searchData=
 [
-  ['tabjoueurs_129',['tabJoueurs',['../struct_jeux.html#ac6ffbd35ce8980b2c776389ea7cb8eab',1,'Jeux']]],
-  ['taillemax_130',['TAILLEMAX',['../structure_8h.html#af83984133e582f79f962e7375122cf02',1,'structure.h']]],
-  ['test_131',['test',['../class_my_library_1_1_example.html#a1c0046b0674eb4cad09c5d3e943912b8',1,'MyLibrary::Example']]],
-  ['tetedeboeuf_132',['teteDeboeuf',['../struct_carte.html#ab4f9dbb26c39b5e751daf1f9d9059391',1,'Carte']]],
-  ['tips_20_26_20tricks_133',['Tips &amp; Tricks',['../md_doxygen_awesome_css_docs_tricks.html',1,'']]],
-  ['todo_20list_134',['Todo List',['../todo.html',1,'']]],
-  ['tour2jeu_135',['tour2Jeu',['../jeu_8c.html#a017b62a8aafeff4509b47b97e611fb10',1,'tour2Jeu(Jeux *Jeu, int argv, char *argc[]):&#160;jeu.c'],['../jeu_8h.html#af9a06ad93cbbc1e0b0581c6a66e6ae46',1,'tour2Jeu(Jeux *Jeu, int argc, char *argv[]):&#160;jeu.c']]],
-  ['tricks_2emd_136',['tricks.md',['../tricks_8md.html',1,'']]],
-  ['type_137',['type',['../struct_joueur.html#a42b76d5589210d5a894b08cb6e7e1174',1,'Joueur::type()'],['../structure_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d',1,'type():&#160;structure.h']]]
+  ['valeur_115',['valeur',['../struct_carte.html#a0ff8146e2b332a5ff429566baf66e28b',1,'Carte']]],
+  ['variante_116',['variante',['../struct_jeux.html#af172f6af59d303e439bb34f6fb8dfb81',1,'Jeux']]],
+  ['verifseries_117',['verifSeries',['../jeu_8c.html#a86dcb719aa46807a86c8155f663f669a',1,'verifSeries(Jeux *Jeu, int colonneJouee):&#160;jeu.c'],['../jeu_8h.html#abd7b905c8a2c01acd1c3a8fe3f4dcf59',1,'verifSeries(Jeux *Jeu, int colonneJouee):&#160;jeu.c']]],
+  ['vert_5fjaune_118',['VERT_JAUNE',['../structure_8h.html#af0c64c25209d8cfcf0e142cc39aded96ae5e79b234d8c2e6a66a971f451d4e95c',1,'structure.h']]],
+  ['viderseries_119',['viderSeries',['../jeu_8c.html#a1258b8780bd33b184d59e25ff5093fe4',1,'viderSeries(Jeux *Jeu, int colonneJouee, Carte carteJouee, int idJoueur):&#160;jeu.c'],['../jeu_8h.html#a2068ef37781bcb39a8d07c71bedd94d9',1,'viderSeries(Jeux *Jeu, int colonneJouee, Carte carteJouee, int idJoueur):&#160;jeu.c']]],
+  ['violet_5forange_120',['VIOLET_ORANGE',['../structure_8h.html#af0c64c25209d8cfcf0e142cc39aded96a90ea4f5544b370fb127df6e5163d815f',1,'structure.h']]]
 ];

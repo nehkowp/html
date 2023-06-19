@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['id_88',['id',['../struct_joueur.html#a3c83c4ba0e9b07c444b5d65fb627e1e4',1,'Joueur']]],
-  ['initialiserordrepassage_89',['initialiserOrdrePassage',['../creation_8c.html#aae9561fae05fd10fc95daaa07257188f',1,'initialiserOrdrePassage(Jeux *Jeu):&#160;creation.c'],['../creation_8h.html#ae2f8fc3cef592a35f3c64b41aa604345',1,'initialiserOrdrePassage(Jeux *Jeu):&#160;creation.c']]],
-  ['intcartetocharcarte_90',['intCarteToCharCarte',['../jeu_8c.html#a86cc48f062f5245d7a2e8ef3eb286b51',1,'intCarteToCharCarte(int valeur):&#160;jeu.c'],['../jeu_8h.html#a7146ee82c910e63260ee1a44afc09d9e',1,'intCarteToCharCarte(int valeur):&#160;jeu.c']]]
+  ['jeu_2ec_78',['jeu.c',['../jeu_8c.html',1,'']]],
+  ['jeu_2eh_79',['jeu.h',['../jeu_8h.html',1,'']]],
+  ['jeux_80',['Jeux',['../struct_jeux.html',1,'Jeux'],['../structure_8h.html#ad5186551184a7fd05692e7e26d81d7df',1,'Jeux():&#160;structure.h']]],
+  ['joueur_81',['Joueur',['../struct_joueur.html',1,'Joueur'],['../structure_8h.html#ad2ad7f032ff7045e5e7b512a42878654',1,'Joueur():&#160;structure.h']]]
 ];
