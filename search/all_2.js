@@ -10,8 +10,10 @@ var searchData=
   ['bluhb_22',['BLUHB',['../structure_8h.html#aaf3a6b1d1acbdd2d9efdb841efda0fe3',1,'structure.h']]],
   ['bora_23',['BORA',['../structure_8h.html#af3c1ace43bf567cc431b775e487c7780',1,'structure.h']]],
   ['bot_24',['BOT',['../structure_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2da8701d7066e8b0fb9f21e9d933739062e',1,'structure.h']]],
-  ['bpur_25',['BPUR',['../structure_8h.html#a40f6d279b22b4936c02150685c6b141b',1,'structure.h']]],
-  ['bred_26',['BRED',['../structure_8h.html#a2adb4c9e293ac446897ccfac5a52d6c2',1,'structure.h']]],
-  ['bwht_27',['BWHT',['../structure_8h.html#ae528cad0e6c76be71eb66776599ec5d9',1,'structure.h']]],
-  ['byel_28',['BYEL',['../structure_8h.html#a9b526756196d7c0efa31bc8fe4e5f138',1,'structure.h']]]
+  ['bots_2ec_25',['bots.c',['../bots_8c.html',1,'']]],
+  ['bots_2eh_26',['bots.h',['../bots_8h.html',1,'']]],
+  ['bpur_27',['BPUR',['../structure_8h.html#a40f6d279b22b4936c02150685c6b141b',1,'structure.h']]],
+  ['bred_28',['BRED',['../structure_8h.html#a2adb4c9e293ac446897ccfac5a52d6c2',1,'structure.h']]],
+  ['bwht_29',['BWHT',['../structure_8h.html#ae528cad0e6c76be71eb66776599ec5d9',1,'structure.h']]],
+  ['byel_30',['BYEL',['../structure_8h.html#a9b526756196d7c0efa31bc8fe4e5f138',1,'structure.h']]]
 ];

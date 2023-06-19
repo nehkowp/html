@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['jeux_81',['Jeux',['../struct_jeux.html',1,'Jeux'],['../structure_8h.html#ad5186551184a7fd05692e7e26d81d7df',1,'Jeux():&#160;structure.h']]],
-  ['joueur_82',['Joueur',['../struct_joueur.html',1,'Joueur'],['../structure_8h.html#ad2ad7f032ff7045e5e7b512a42878654',1,'Joueur():&#160;structure.h']]]
+  ['jeu_2ec_78',['jeu.c',['../jeu_8c.html',1,'']]],
+  ['jeu_2eh_79',['jeu.h',['../jeu_8h.html',1,'']]],
+  ['jeux_80',['Jeux',['../struct_jeux.html',1,'Jeux'],['../structure_8h.html#ad5186551184a7fd05692e7e26d81d7df',1,'Jeux():&#160;structure.h']]],
+  ['joueur_81',['Joueur',['../struct_joueur.html',1,'Joueur'],['../structure_8h.html#ad2ad7f032ff7045e5e7b512a42878654',1,'Joueur():&#160;structure.h']]]
 ];
