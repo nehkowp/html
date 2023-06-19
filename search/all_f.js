@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['readme_2emd_100',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
-  ['redhb_101',['REDHB',['../structure_8h.html#a24688c0b2f50e0f2b7ce64aa5814cf0c',1,'structure.h']]],
-  ['reset_102',['reset',['../structure_8h.html#a01de9e6a115c86e1c2b8747df2b28925',1,'structure.h']]],
-  ['rouge_5fvert_103',['ROUGE_VERT',['../structure_8h.html#af0c64c25209d8cfcf0e142cc39aded96a62aed0e35ca8faa71c57ae50855457a2',1,'structure.h']]]
+  ['pioche_111',['pioche',['../struct_jeux.html#a7d74b4e686f34c8dd572ed10d7186075',1,'Jeux']]],
+  ['placementcarteseries_112',['placementCarteSeries',['../jeu_8c.html#a88686d0753df59686e9f29736d123914',1,'placementCarteSeries(Jeux *Jeu, int nbCarteNegative, int colonneJouee, int idJoueur):&#160;jeu.c'],['../jeu_8h.html#ae490320c625029fe9ffe7bd10b489967',1,'placementCarteSeries(Jeux *Jeu, int nbCarteNegative, int colonneJouee, int idJoueur):&#160;jeu.c']]],
+  ['placementseries_113',['placementSeries',['../jeu_8c.html#a3357c0efc57781a8e48802d838f9abcf',1,'placementSeries(Jeux *Jeu):&#160;jeu.c'],['../jeu_8h.html#a78549f5df7826fecdc2dd1641f80740c',1,'placementSeries(Jeux *Jeu):&#160;jeu.c']]],
+  ['purhb_114',['PURHB',['../structure_8h.html#a0e44727d0a6f432cec4ed9220645f558',1,'structure.h']]]
 ];

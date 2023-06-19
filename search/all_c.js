@@ -1,8 +1,11 @@
 var searchData=
 [
-  ['nb_5fcartes_90',['nb_cartes',['../struct_joueur.html#a100dcf976eb07bc27e53908bf513226c',1,'Joueur']]],
-  ['nb_5fdefinis_91',['NB_DEFINIS',['../structure_8h.html#a1a6b6fb557d8d37d59700faf4e4c9167a460a742e4bce0aa178e074fc3f76d7cb',1,'structure.h']]],
-  ['nbjoueurs_92',['nbJoueurs',['../struct_jeux.html#a30d0ada3a9657626428ce7e1e8bf83dd',1,'Jeux']]],
-  ['niveaubots_93',['niveauBots',['../struct_jeux.html#a547240d440d76ecdf64425f620d3d737',1,'Jeux']]],
-  ['nomjoueur_94',['nomJoueur',['../struct_joueur.html#a23faf923fdfddd0ed37669438862ea33',1,'Joueur']]]
+  ['main_97',['main',['../main_8c.html#ac4c0f8a8146b128f1b8f920e3a9c3b1e',1,'main.c']]],
+  ['main_2ec_98',['main.c',['../main_8c.html',1,'']]],
+  ['mainjoueur_99',['mainJoueur',['../struct_joueur.html#aabb3c7c31015e9d83653835c767e8745',1,'Joueur']]],
+  ['manchejoueurs_100',['mancheJoueurs',['../jeu_8c.html#a2c2c07fe98287fa7b6928d701aaa2046',1,'mancheJoueurs(Jeux *Jeu):&#160;jeu.c'],['../jeu_8h.html#a353b54b6a67ccd9a7c5876276ecb3eb7',1,'mancheJoueurs(Jeux *Jeu):&#160;jeu.c']]],
+  ['medium_101',['MEDIUM',['../structure_8h.html#a35aa2d55b501700469097f04b7962297a5340ec7ecef6cc3886684a3bd3450d64',1,'structure.h']]],
+  ['melangepioche_102',['melangePioche',['../jeu_8c.html#aa33b0cf44b73eea6c3152021d6ccbf4b',1,'melangePioche(Jeux *Jeu, int NbrCarteVariante):&#160;jeu.c'],['../jeu_8h.html#aa33b0cf44b73eea6c3152021d6ccbf4b',1,'melangePioche(Jeux *Jeu, int NbrCarteVariante):&#160;jeu.c']]],
+  ['mode_103',['mode',['../structure_8h.html#a1a6b6fb557d8d37d59700faf4e4c9167',1,'structure.h']]],
+  ['mylibrary_104',['MyLibrary',['../namespace_my_library.html',1,'']]]
 ];

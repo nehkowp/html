@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['lancementarg_82',['lancementArg',['../affichage_8c.html#a5ad82e198d4668b31a5aee88468edda4',1,'lancementArg(Jeux *Jeu, int argc, char *argv[]):&#160;affichage.c'],['../affichage_8h.html#a317970f049c6f2e6b462f99649c76b60',1,'lancementArg(Jeux *Jeu, int argc, char *argv[]):&#160;affichage.c']]]
+  ['jeu_2ec_91',['jeu.c',['../jeu_8c.html',1,'']]],
+  ['jeu_2eh_92',['jeu.h',['../jeu_8h.html',1,'']]],
+  ['jeux_93',['Jeux',['../struct_jeux.html',1,'Jeux'],['../structure_8h.html#ad5186551184a7fd05692e7e26d81d7df',1,'Jeux():&#160;structure.h']]],
+  ['joueur_94',['Joueur',['../struct_joueur.html',1,'Joueur'],['../structure_8h.html#ad2ad7f032ff7045e5e7b512a42878654',1,'Joueur():&#160;structure.h']]]
 ];

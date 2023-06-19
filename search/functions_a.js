@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['verifseries_184',['verifSeries',['../jeu_8c.html#a86dcb719aa46807a86c8155f663f669a',1,'verifSeries(Jeux *Jeu, int colonneJouee):&#160;jeu.c'],['../jeu_8h.html#abd7b905c8a2c01acd1c3a8fe3f4dcf59',1,'verifSeries(Jeux *Jeu, int colonneJouee):&#160;jeu.c']]],
-  ['viderseries_185',['viderSeries',['../jeu_8c.html#a1258b8780bd33b184d59e25ff5093fe4',1,'viderSeries(Jeux *Jeu, int colonneJouee, Carte carteJouee, int idJoueur):&#160;jeu.c'],['../jeu_8h.html#a2068ef37781bcb39a8d07c71bedd94d9',1,'viderSeries(Jeux *Jeu, int colonneJouee, Carte carteJouee, int idJoueur):&#160;jeu.c']]]
+  ['test_218',['test',['../class_my_library_1_1_example.html#a1c0046b0674eb4cad09c5d3e943912b8',1,'MyLibrary::Example']]],
+  ['tour2jeu_219',['tour2Jeu',['../jeu_8c.html#a017b62a8aafeff4509b47b97e611fb10',1,'tour2Jeu(Jeux *Jeu, int argv, char *argc[]):&#160;jeu.c'],['../jeu_8h.html#af9a06ad93cbbc1e0b0581c6a66e6ae46',1,'tour2Jeu(Jeux *Jeu, int argc, char *argv[]):&#160;jeu.c']]]
 ];

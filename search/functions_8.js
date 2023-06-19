@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['seuiltdb_180',['seuiltdb',['../jeu_8c.html#a76e420099ea78effc88f52dac77aa644',1,'seuiltdb(Jeux *Jeu, int idjoueur):&#160;jeu.c'],['../jeu_8h.html#a87853adfb363f41b3087b82cd731ba76',1,'seuiltdb(Jeux *Jeu, int idjoueur):&#160;jeu.c']]],
-  ['startjeu_181',['startJeu',['../jeu_8c.html#a28bea5313cc3c1cc2092001bda10c43a',1,'startJeu(Jeux *Jeu, int argc, char *argv[]):&#160;jeu.c'],['../jeu_8h.html#a860b0d44e5064302e3bae50f78516618',1,'startJeu(Jeux *Jeu, int argc, char *argv[]):&#160;jeu.c']]],
-  ['supprimercarte_182',['supprimercarte',['../jeu_8c.html#ab96983c0835aefe62b62a2fc5b6a7db9',1,'supprimercarte(Carte *cartes, int *p_taille, int position):&#160;jeu.c'],['../jeu_8h.html#ae7c99aa852ba7abe463a490576a9f9b1',1,'supprimercarte(Carte *cartes, int *p_taille, int position):&#160;jeu.c']]]
+  ['placementcarteseries_212',['placementCarteSeries',['../jeu_8c.html#a88686d0753df59686e9f29736d123914',1,'placementCarteSeries(Jeux *Jeu, int nbCarteNegative, int colonneJouee, int idJoueur):&#160;jeu.c'],['../jeu_8h.html#ae490320c625029fe9ffe7bd10b489967',1,'placementCarteSeries(Jeux *Jeu, int nbCarteNegative, int colonneJouee, int idJoueur):&#160;jeu.c']]],
+  ['placementseries_213',['placementSeries',['../jeu_8c.html#a3357c0efc57781a8e48802d838f9abcf',1,'placementSeries(Jeux *Jeu):&#160;jeu.c'],['../jeu_8h.html#a78549f5df7826fecdc2dd1641f80740c',1,'placementSeries(Jeux *Jeu):&#160;jeu.c']]]
 ];

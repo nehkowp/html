@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['nb_5fdefinis_226',['NB_DEFINIS',['../structure_8h.html#a1a6b6fb557d8d37d59700faf4e4c9167a460a742e4bce0aa178e074fc3f76d7cb',1,'structure.h']]]
+  ['medium_265',['MEDIUM',['../structure_8h.html#a35aa2d55b501700469097f04b7962297a5340ec7ecef6cc3886684a3bd3450d64',1,'structure.h']]]
 ];
