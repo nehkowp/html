@@ -7,5 +7,5 @@ digraph "afficherCarte"
   rankdir="LR";
   Node1 [label="afficherCarte",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Affiche une carte de manière différente en fonction de son état."];
   Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="intCarteToCharCarte",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$jeu_8c.html#aaafffa208510d93f7593d9420bad974e",tooltip=": Permet de renvoyer un char \"  1 \" ou \" 10\" selon le int envoyé"];
+  Node2 [label="intCarteToCharCarte",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$jeu_8c.html#a86cc48f062f5245d7a2e8ef3eb286b51",tooltip="Permet de renvoyer un char \"  1 \" ou \" 10\" selon le int envoyé"];
 }
