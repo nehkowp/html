@@ -32,7 +32,9 @@ margin:0;
 	grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
 }
 .container .row100 .col
-{
+{	
+	display: flex;
+	justify-content: center;
 	position: relative;
 	width: 100%;
 	padding: 0 10px;
@@ -86,7 +88,7 @@ margin:0;
 	height: 2px;
 	background: #45f3ff;
 	transition: 0.5s;
-	border-radius: 2px;
+	border-radius: 6px;
 	pointer-events: none;
 }
 .container .row100 .inputBox input:focus ~ .line,
