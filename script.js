@@ -1,27 +1,26 @@
 document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("formenvoi").addEventListener("submit", function(event) {
+    document.getElementById("formenvoi").addEventListener("submit", async function(event) {
         event.preventDefault(); // Empêcher le formulaire de se soumettre normalement
         
-        var prenom = document.getElementById("prenom").value; // Récupérer la valeur de l'input "prenom"
-        
-        var xhr = new XMLHttpRequest();
-        var url = "https://isborishere-rhwfxvev7q-ew.a.run.app/isBorisHere";
-        xhr.open("POST", url, true);
-        xhr.setRequestHeader("Content-Type", "application/json");
-        xhr.setRequestHeader("Access-Control-Allow-Origin","*")
-        xhr.setRequestHeader("Accept", "*/*"); // Ajouter l'en-tête Accept pour indiquer le type de contenu accepté	
-        xhr.onreadystatechange = function () {
-            if (xhr.readyState === 4 && xhr.status === 200) {
-                var json = JSON.parse(xhr.responseText);
-                console.log(json);
-            }else{
-                console.error("Erreur de la requête : " + xhr.status);
-            }
-        };
-        var data = JSON.stringify({
-            "usage": "is_here",
-            "name": prenom // Utiliser la valeur de l'input "prenom" dans la requête
-        });
-        xhr.send(data);
+        var prenom = document.getElementById("prenom").value; // Récupérer la valeur de l'input "prenom"  
+            // Default options are marked with *
+            const response = await fetch("https://isborishere-rhwfxvev7q-ew.a.run.app/isBorisHere", {
+              method: "POST", // *GET, POST, PUT, DELETE, etc.
+              mode: "cors", // no-cors, *cors, same-origin
+              cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+              credentials: "same-origin", // include, *same-origin, omit
+              headers: {
+                "Content-Type": "application/json",
+                // 'Content-Type': 'application/x-www-form-urlencoded',
+              },
+              redirect: "follow", // manual, *follow, error
+              referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+              body: JSON.stringify({
+                "usage": "is_here",
+                "name": prenom
+                }), // body data type must match "Content-Type" header
+            });
+            console.log(response.json()); // JSON data parsed by `data.json()` call
+          
     });
 });
