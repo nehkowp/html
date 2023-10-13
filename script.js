@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("formenvoi").addEventListener("submit", async function(event) {
+    document.getElementById("formenvoi").addEventListener("click", async function(event) {
         event.preventDefault(); // Empêcher le formulaire de se soumettre normalement
         
         var prenom = document.getElementById("prenom").value; // Récupérer la valeur de l'input "prenom"  
