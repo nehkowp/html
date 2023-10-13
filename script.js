@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 "name": prenom
                 }), // body data type must match "Content-Type" header
             });
-            console.log(response.json()); // JSON data parsed by `data.json()` call
+            console.log(await response.json()); // JSON data parsed by `data.json()` call
           
     });
 });
