@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
             // Default options are marked with *
             //http://127.0.0.1:5000/isBorisHere
             //https://isborishere-rhwfxvev7q-ew.a.run.app/isBorisHere
-            const response = await fetch("http://127.0.0.1:5000/isBorisHere", {
+            const response = await fetch("https://isborishere-rhwfxvev7q-ew.a.run.app/isBorisHere", {
               method: "POST", // *GET, POST, PUT, DELETE, etc.
               mode: "cors", // no-cors, *cors, same-origin
               cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
