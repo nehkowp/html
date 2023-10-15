@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
             // Default options are marked with *
             //http://127.0.0.1:5000/isBorisHere
             //https://isborishere-rhwfxvev7q-ew.a.run.app/isBorisHere
-            const response = await fetch("https://isborishere-rhwfxvev7q-ew.a.run.app/isBorisHere", {
+            const response = await fetch("http://127.0.0.1:5000/isBorisHere", {
               method: "POST", // *GET, POST, PUT, DELETE, etc.
               mode: "cors", // no-cors, *cors, same-origin
               cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
@@ -26,6 +26,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
             var result = await response.json()
             switch (result.bool_presence) {
+                case -1:
+                    document.querySelector("#card-2").setAttribute("hidden","");
+                    document.querySelector("#card-1").removeAttribute("hidden");
+                    document.querySelector("#class-1").innerHTML = "Veuillez réessayer avec un nom correct | Exemple : Barrau Nelly";
+                    document.querySelector("#presence-1").innerHTML = "Mauvaise Requête | Erreur";
+                    document.querySelector("#hour-1").innerHTML = " Error[404] <3";
+                    break;
                 case 0:
                     document.querySelector("#card-2").setAttribute("hidden","");
                     document.querySelector("#card-1").removeAttribute("hidden");
