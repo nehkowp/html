@@ -26,6 +26,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
             var result = await response.json()
             switch (result.bool_presence) {
+                case -2:
+                  document.querySelector("#card-2").setAttribute("hidden","");
+                  document.querySelector("#card-1").removeAttribute("hidden");
+                  document.querySelector("#class-1").innerHTML = "Évidemment qu'il est présent, il peut même vous payer un café tout de suite";
+                  document.querySelector("#presence-1").innerHTML = "Antoine Le Meilleur P1 ";
+                  document.querySelector("#hour-1").innerHTML = "C'est aussi le goat du JS <3";
+                  break;
+
                 case -1:
                     document.querySelector("#card-2").setAttribute("hidden","");
                     document.querySelector("#card-1").removeAttribute("hidden");
